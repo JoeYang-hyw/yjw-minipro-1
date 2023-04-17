@@ -1,0 +1,76 @@
+<!--index.wxml-->
+<view class='container'>
+  <view class='today-weather-container'>
+    <view>
+      <view class='location'>
+        <view>{{province}}</view>
+        <view>{{city}}</view>
+      </view>
+      <view class='toggle-button' bindtap='addCity'>+</view>
+      <view class='current-weather-image-container'>
+        <image src='{{picUrl[curWeather.text]}}' class='current-weather-image'></image>
+      </view>
+      <view class='tmp-condtxt'>
+        <text>{{curWeather.text}}</text>
+        <text>{{curWeather.temp}}℃</text>
+      </view>
+      <view class='hum_prec_wind'>
+        <view class='humidity'>
+          <text>相对湿度</text>
+          <text>{{curWeather.humidity}} %</text>
+        </view>
+        <view class='precipitation'>
+          <text>降水量</text>
+          <text>{{curWeather.precip}} mm</text>
+        </view>
+        <view class='wind'>
+          <text>{{curWeather.windDir}}</text>
+          <text>{{curWeather.windSpeed}} km/h</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <scroll-view class='future-weather-container' scroll-x='true'>
+    <view class='forecast'>
+      <view wx:for="{{weatherInfo}}" wx:key="item">
+        <view class='weather-overview'>
+          <text>{{item.fxDate}}</text>
+          <text>{{item.textDay}}</text>
+          <image src='{{picUrl[item.textDay]}}' class='weatherImage'></image>
+          <text>{{item.tempMin}}℃ ~ {{item.tempMax}}℃</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <view class='lifestyle-container'>
+    <view  wx:for="{{lifestyle}}" wx:key="item">
+      <view class='lifestyle-view'>
+        <view class='lifestyle-image-view'>
+          <image src='{{picUrl[item.name]}}' class='lifestyle-image'></image>
+          <text>{{item.name}}</text>
+        </view>
+        <view class='lifestyle-txt'>{{item.text}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='select-city' wx:if="{{selectCityView}}"> 
+    <view class='city-header'>
+      <view class='city-cancel' bindtap='cancel'>取消</view>
+      <view class='city-confirm' bindtap='confirm'>确定</view>
+    </view>
+    <picker-view indicator-style="height: 40px;" value="{{value}}" bindchange="bindChange" class='city-picker-view'>
+      <picker-view-column>
+        <view wx:for="{{provinces}}" wx:key="item" style="line-height: 40px;" class='city-picker-column'>{{item}}</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{cities}}" wx:key="item" style="line-height: 40px;" class='city-picker-column'>{{item}}</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{districts}}" wx:key="item" style="line-height: 40px;" class='city-picker-column'>{{item}}</view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+</view>
