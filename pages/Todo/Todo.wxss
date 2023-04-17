@@ -8,6 +8,7 @@
   width: 100%;
   display: flex;
   margin-bottom: 50rpx;
+  color: #ecdd0a;
 }
 .input{
   width: 70%;
@@ -31,7 +32,7 @@
   margin-left: 10rpx;
 }
 .todoList{
-  color: #474747;
+  color: #ecdd0a;
   width: 85%;
   margin: 30rpx auto;
   border-top: 1rpx solid #aaa;
@@ -49,7 +50,7 @@
   letter-spacing: 1rpx;
   margin-top:10rpx; 
   padding-bottom: 10rpx;
-  border-bottom: 1rpx solid #aaa;
+  border-bottom: 1rpx solid rgb(170, 170, 170);
 }
 .clearIcon{
   position: absolute;
@@ -63,7 +64,7 @@
   text-overflow: ellipsis;
 }
 .textDelete{
-  color:#696969;
+  color:#9b943a;
   text-decoration: line-through;
   padding-left:10rpx; 
   width: 75%;
@@ -78,11 +79,11 @@
   padding-left: 15rpx;
   border-top: 2rpx solid #aaa;
   bottom: 50rpx;
-  color: #696969;
+  color: #e4e014;
 }
 .proverb{
   text-align: center;
-  color: #696969;
+  color: #e4e014;
   font-size: 0.65em;
   font-weight: 500;
   margin-top: 20rpx;
