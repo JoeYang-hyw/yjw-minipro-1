@@ -1,4 +1,8 @@
 <!--logs.wxml-->
+<!--背景图片-->
+<view>
+<image class="bg-image" mode="scaleToFill" src="https://pic.imgdb.cn/item/643d065a0d2dde57771a3adf.png"></image>
+</view>
 <scroll-view scroll-y="true" class='wrapper'>
 <view class='total-wrapper'>
   <view class='bills-details-view'>

@@ -1,4 +1,10 @@
 /**bill button**/
+.bg-image{ 
+  width : 100%;
+  height : 100%;  
+  position: fixed;  
+  z-index: -1;  
+}
 .total-wrapper{
   width: 96%;
   margin: 0 auto;
