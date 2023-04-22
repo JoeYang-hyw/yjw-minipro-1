@@ -1,6 +1,6 @@
 <!--背景图片-->
 <view>
-<image class="bg-image" mode="scaleToFill" src="https://pic.imgdb.cn/item/643d065b0d2dde57771a3cdf.jpg"></image>
+<image class="bg-image" mode="scaleToFill" src="https://pic1.imgdb.cn/item/643d065b0d2dde57771a3cdf.jpg"></image>
 </view>
 <scroll-view scroll-y="true">
   <view class='inputform'>
