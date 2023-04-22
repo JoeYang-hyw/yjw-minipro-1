@@ -93,6 +93,11 @@ Page({
   onLoad: function (options) {
     var history = wx.getStorageSync('todoHistory')
     var today = formatTime(new Date())
+    //add share function
+    wx.showShareMenu({
+      withShareTicket:true,
+      menus:['shareAppMessage','shareTimeline']
+    })
     if(typeof history!=="object"){
       history=[]
     }else{

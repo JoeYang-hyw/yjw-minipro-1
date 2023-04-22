@@ -38,6 +38,11 @@ Page({
   },
   onLoad: function () {
     var history = wx.getStorageSync('billsHistory')
+    //add share function
+    wx.showShareMenu({
+      withShareTicket:true,
+      menus:['shareAppMessage','shareTimeline']
+    })
     //console.log(typeof history)
     if (typeof history !== "object") {
       history = { 'bills': [], 'totalExpenses': 0, 'totalIncome': 0,"surplus":0}

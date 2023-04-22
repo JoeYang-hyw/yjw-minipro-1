@@ -9,6 +9,11 @@ Page({
   },
   onLoad: function (options) {
     var Anniversary = wx.getStorageSync("Anniversary")
+    //add share function
+    wx.showShareMenu({
+      withShareTicket:true,
+      menus:['shareAppMessage','shareTimeline']
+    })
     if(typeof Anniversary!=='object'){
       Anniversary=[]
     }

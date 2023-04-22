@@ -58,6 +58,11 @@ Page({
     'lifestyleIndex':{'comf':"舒适度指数","drsg":"穿衣指数","flu":"感冒指数","sport":"运动指数","trav":"旅游指数","uv":"紫外线指数","cw":"洗车指数","air":"空气污染扩散条件指数"}
   },
   onLoad: function () {
+    //add share function
+    wx.showShareMenu({
+      withShareTicket:true,
+      menus:['shareAppMessage','shareTimeline']
+    })
     //console.log(this.data.picUrl)
     this.getLocation()
     var that=this
