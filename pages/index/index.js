@@ -26,6 +26,7 @@ var picToUrl = {
   "雷阵雨": "https://t1.picb.cc/uploads/2018/02/03/s6xm0.png",
   "风": "https://t1.picb.cc/uploads/2018/02/03/s6B5F.png",
   "晴": "https://t1.picb.cc/uploads/2018/02/03/s69Dd.png",
+  "雨": "https://t1.picb.cc/uploads/2018/02/03/s60TM.png",
   "多云": "https://t1.picb.cc/uploads/2018/02/03/s6XZt.png",
   "大雨": "https://t1.picb.cc/uploads/2018/02/03/s60TM.png",
   "大雪": "https://t1.picb.cc/uploads/2018/02/03/s6pqT.png",
