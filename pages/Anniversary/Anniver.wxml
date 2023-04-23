@@ -1,6 +1,6 @@
 <!--背景图片-->
 <view>
-<image class="bg-image" mode="scaleToFill" src="https://pic1.imgdb.cn/item/643d06590d2dde57771a39c6.jpg"></image>
+<image class="bg-image" mode="scaleToFill" src="https://s1.ax1x.com/2023/04/23/p9ekgVf.jpg"></image>
 </view>
 <view>
   <view class='addAnniver' bindtap='addAnniver'>+</view>
